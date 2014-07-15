@@ -11,40 +11,52 @@ def sum_odd_indexed(array)
   sum
 end
 
-puts  sum_odd_indexed([1, 2, 3, 4, 5, 6])
+puts sum_odd_indexed([1, 2, 3, 4, 5, 6])
 
 def even_numbers(array)
   # TODO: Return the even numbers from a list of integers.
   #       You should use Enumerable#select
 
-  return Enumerable "#{select}"
 
-
-
-
-
-
+  array.select { |number| number.even? }
 
 end
 
 def short_words(array, max_length)
   # TODO: Take and array of words, return the array of words not exceeding max_length characters
   #       You should use Enumerable#reject
+
+  array.reject { |word| word.length > max_length }
+
 end
 
 def first_under(array, limit)
   # TODO: Return the first number from an array that is less than limit.
   #       You should use Enumerable#find
+
+ array.find {|number| number < limit}
+
 end
 
 def add_bang(array)
   # TODO: Take an array of strings and return a new array with "!" appended to each string.
   #       You should use Enumerable#map
+  array.map {|word| "#{word}!" }
 end
+
+word = add_bang(["un", "deux", "trois"])
+p word
+
+
+
+
+
 
 def product(array)
   # TODO: Calculate the product of an array of numbers.
   #       You should use of Enumerable#reduce
+
+
 end
 
 def sorted_pairs(array)
