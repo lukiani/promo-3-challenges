@@ -1,4 +1,11 @@
 def coach_answer(your_message)
+  your_message = "I met a girl last night"
+
+
+
+
+
+
   # TODO: return coach answer to your_message
 end
 
